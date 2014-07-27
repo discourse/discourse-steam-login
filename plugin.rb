@@ -1,9 +1,9 @@
 # name: Steam authentication with Discourse
 # about: Authenticate with Discourse with Steam
-# version: 0.2.0
+# version: 0.3.0
 # author: J. de Faye, Sam Saffron
 
-gem 'omniauth-steam', '1.0.3', git: 'https://github.com/reu/omniauth-steam.git'
+require File.expand_path('../omniauth-steam.rb', __FILE__)
 
 class SteamAuthenticator < ::Auth::Authenticator
 
