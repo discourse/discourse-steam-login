@@ -1,7 +1,8 @@
 # name: Steam authentication with Discourse
 # about: Authenticate with Discourse with Steam
-# version: 0.3.0
-# author: J. de Faye, Sam Saffron
+# version: 1.0.0
+# author: J. de Faye
+# template author: S. Saffron
 
 require File.expand_path('../omniauth-steam.rb', __FILE__)
 
@@ -16,7 +17,6 @@ class SteamAuthenticator < ::Auth::Authenticator
 
     data = auth_token[:info]
     raw_info = auth_token["extra"]["raw_info"]
-    name = data["name"]
     steam_uid = auth_token["uid"]
 
     current_info = ::PluginStore.get('steam', "steam_uid_#{steam_uid}")
@@ -26,7 +26,8 @@ class SteamAuthenticator < ::Auth::Authenticator
         User.where(id: current_info[:user_id]).first
       end
 
-    result.name = name
+    result.username = data["nickname"]
+    result.name = data["name"] # unless profile privacy set to private
     result.extra_data = { steam_uid: steam_uid }
 
     result
@@ -34,8 +35,7 @@ class SteamAuthenticator < ::Auth::Authenticator
 
   def after_create_account(user, auth)
     data = auth[:extra_data]
-    ::PluginStore.set('steam', "steam_uid_#{data[:steam_uid]}",
-      {user_id: user.id })
+    ::PluginStore.set('steam', "steam_uid_#{data[:steam_uid]}", {user_id: user.id })
   end
 
   def register_middleware(omniauth)
