@@ -1,6 +1,6 @@
 # name: Steam authentication with Discourse
 # about: Authenticate with Discourse with Steam
-# version: 1.0.0
+# version: 1.1.0
 # author: J. de Faye
 # template author: S. Saffron
 
@@ -53,12 +53,11 @@ auth_provider title: 'with Steam',
 register_css <<CSS
 
 .btn-social.steam {
-  background: #000;
-  color: #EFE;
+    background: #000;
 }
 
 .btn-social.steam:before {
-  content: "b";
+    content:"\f1b6";
 }
 
 CSS
