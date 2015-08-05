@@ -57,7 +57,7 @@ register_css <<CSS
 }
 
 .btn-social.steam:before {
-    content:"\f1b6";
+    content: $fa-var-steam;
 }
 
 CSS
