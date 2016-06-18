@@ -1,0 +1,6 @@
+.btn-social.steam {
+    background: #000;
+    &::before {
+    	content: $fa-var-steam;
+    }
+}

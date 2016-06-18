@@ -1,0 +1,7 @@
+plugins:
+  discourse_steam_login_enabled:
+    client: true
+    default: false
+  discourse_steam_login_api_key:
+    client: false
+    default: ''

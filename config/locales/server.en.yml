@@ -1,0 +1,4 @@
+en:
+  site_settings:
+    discourse_steam_login_enabled: "Allow users to authenticate via Steam?"
+    discourse_steam_login_api_key: "Available from <a href=\"http://steamcommunity.com/dev/apikey\" target=\"_blank\">steamcommunity.com/dev/apikey</a> e.g. forum.example.org"

@@ -17,9 +17,9 @@ Discourse Steam Login
 
 5. Run `./launcher rebuild app` to apply the changes.
 
-6. You're done! Please consider starring [my repository][1] as it gives me some feedback on whether this is well received. This will encourage me to find more time to improve the plugin and enhance it in the future.
+6. You're done! Please consider starring [my repository][1] if you use github. The more attention it gets, the more I will give back to it.
 
-7. If you encounter problems, or know 100% that it is a bug with the plugin, make a report here, and include full details, screenshots, and sensored configuration of your `app.yml`. Go into precise details into how to reproduce the problem. Do not write bug reports if you do not have the time to write a proper report or can be bothered to investigate the issue methodically yourself first. For community help, head over to the [meta.discourse.org page][2].
+7. Please ask well-formed, well-written questions at the [meta.discourse.org page][2]. If you think there is a bug, then go to some effort to prove it if you intend to open an issue, or I will not take you seriously.
 
 [1]:https://github.com/defaye/discourse-steam-login
 [2]:https://meta.discourse.org/t/steam-login-authentication-plugin/18153

@@ -1,15 +1,29 @@
-# name: Steam authentication with Discourse
-# about: Authenticate with Discourse with Steam
-# version: 1.1.1
-# author: J. de Faye
-# template author: S. Saffron
+# name: Steam authenticator
+# about: Authenticate with Discourse via Steam
+# version: 1.2
+# author: Jonathan de Faye
+# url: https://github.com/defaye/discourse-steam-login
 
-require File.expand_path('../omniauth-steam.rb', __FILE__)
+enabled_site_setting :discourse_steam_login_enabled
+enabled_site_setting :discourse_steam_login_api_key
+
+require File.expand_path('../lib/omniauth-steam.rb', __FILE__)
+
+register_asset 'stylesheets/plugin.scss'
 
 class SteamAuthenticator < ::Auth::Authenticator
-
   def name
     'steam'
+  end
+
+  def register_middleware(omniauth)
+    omniauth.provider :steam, SiteSetting.discourse_steam_login_api_key.present? ?
+      SiteSetting.discourse_steam_login_api_key : ENV['STEAM_WEB_API_KEY']
+  end
+
+  def after_create_account(user, auth)
+    data = auth[:extra_data]
+    ::PluginStore.set('steam', "steam_uid_#{data[:steam_uid]}", {user_id: user.id })
   end
 
   def after_authenticate(auth_token)
@@ -32,32 +46,9 @@ class SteamAuthenticator < ::Auth::Authenticator
 
     result
   end
-
-  def after_create_account(user, auth)
-    data = auth[:extra_data]
-    ::PluginStore.set('steam', "steam_uid_#{data[:steam_uid]}", {user_id: user.id })
-  end
-
-  def register_middleware(omniauth)
-    omniauth.provider :steam, ENV['STEAM_WEB_API_KEY']
-  end
-
 end
 
-auth_provider title: 'with Steam',
-    message: 'Sign in via Steam (Make sure pop up blockers are not enabled).',
-    frame_width: 960,
-    frame_height: 800,
-    authenticator: SteamAuthenticator.new
-
-register_css <<CSS
-
-.btn-social.steam {
-    background: #000;
-}
-
-.btn-social.steam:before {
-    content: $fa-var-steam;
-}
-
-CSS
+auth_provider authenticator: SteamAuthenticator.new,
+              title: 'with Steam',
+              frame_width: 960,
+              frame_height: 800
