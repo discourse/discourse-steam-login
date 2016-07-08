@@ -42,7 +42,7 @@ module OmniAuth
       private
 
       def raw_info
-          @raw_info ||= options.api_key ? MultiJson.decode(Net::HTTP.get(player_profile_uri)) : {}
+          @raw_info ||= options.api_key.call ? MultiJson.decode(Net::HTTP.get(player_profile_uri)) : {}
       end
 
       def player
@@ -54,11 +54,11 @@ module OmniAuth
       end
 
       def player_profile_uri
-        URI.parse("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=#{options.api_key}&steamids=#{steam_id}")
+        URI.parse("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=#{options.api_key.call}&steamids=#{steam_id}")
       end
 
       def friend_list_url
-        URI.parse("http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=#{options.api_key}&steamid=#{steam_id}&relationship=friend")
+        URI.parse("http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=#{options.api_key.call}&steamid=#{steam_id}&relationship=friend")
       end
     end
   end

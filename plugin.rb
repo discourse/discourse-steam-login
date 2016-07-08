@@ -1,6 +1,6 @@
 # name: Steam authenticator
 # about: Authenticate with Discourse via Steam
-# version: 1.2
+# version: 1.3.0
 # author: Jonathan de Faye
 # url: https://github.com/defaye/discourse-steam-login
 
@@ -17,8 +17,8 @@ class SteamAuthenticator < ::Auth::Authenticator
   end
 
   def register_middleware(omniauth)
-    omniauth.provider :steam, SiteSetting.discourse_steam_login_api_key.present? ?
-      SiteSetting.discourse_steam_login_api_key : ENV['STEAM_WEB_API_KEY']
+    omniauth.provider :steam, lambda { return SiteSetting.discourse_steam_login_api_key.present? ?
+      SiteSetting.discourse_steam_login_api_key : ENV['STEAM_WEB_API_KEY'] }
   end
 
   def after_create_account(user, auth)
