@@ -30,7 +30,17 @@ class SteamAuthenticator < ::Auth::Authenticator
     result.name = data["name"] # unless profile privacy set to private
     result.extra_data = { steam_uid: steam_uid }
 
+    retrieve_avatar(result.user, data["image"])
+
     result
+  end
+
+  def retrieve_avatar(user, image_url)
+    return unless user
+    return unless image_url
+    return if user.user_avatar.try(:custom_upload_id).present?
+
+    Jobs.enqueue(:download_avatar_from_url, url: image_url, user_id: user.id, override_gravatar: true)
   end
 
   def after_create_account(user, auth)
