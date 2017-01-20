@@ -28,7 +28,7 @@ class SteamAuthenticator < ::Auth::Authenticator
 
     result.username = data["nickname"]
     result.name = data["name"] # unless profile privacy set to private
-    result.extra_data = { steam_uid: steam_uid }
+    result.extra_data = { steam_uid: steam_uid, image: data["image"] }
 
     retrieve_avatar(result.user, data["image"])
 
@@ -46,6 +46,8 @@ class SteamAuthenticator < ::Auth::Authenticator
   def after_create_account(user, auth)
     data = auth[:extra_data]
     ::PluginStore.set('steam', "steam_uid_#{data[:steam_uid]}", {user_id: user.id })
+
+    retrieve_avatar(user, data[:image])
   end
 
   def register_middleware(omniauth)
