@@ -6,6 +6,8 @@
 
 require File.expand_path('../omniauth-steam.rb', __FILE__)
 
+enabled_site_setting :steam_login_enabled
+
 class SteamAuthenticator < ::Auth::Authenticator
 
   def name
@@ -51,7 +53,7 @@ class SteamAuthenticator < ::Auth::Authenticator
   end
 
   def register_middleware(omniauth)
-    omniauth.provider :steam, ENV['STEAM_WEB_API_KEY']
+    omniauth.provider :steam, SiteSetting.steam_login_api_key
   end
 
 end

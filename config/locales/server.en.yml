@@ -1,0 +1,4 @@
+en:
+  site_settings:
+    steam_login_enabled: 'Steam Login Enabled:'
+    steam_login_api_key: 'Steam Web API Key:'
