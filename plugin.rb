@@ -4,6 +4,10 @@
 # author: J. de Faye
 # template author: S. Saffron
 
+if respond_to?(:register_svg_icon)
+  register_svg_icon "fab fa-steam"
+end
+
 require File.expand_path('../omniauth-steam.rb', __FILE__)
 
 class SteamAuthenticator < ::Auth::Authenticator
@@ -66,10 +70,6 @@ register_css <<CSS
 
 .btn-social.steam {
     background: #000;
-}
-
-.btn-social.steam:before {
-    content: $fa-var-steam;
 }
 
 CSS
