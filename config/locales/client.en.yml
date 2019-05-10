@@ -1,0 +1,7 @@
+en:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "with Steam"
+        message: "Authenticating with Steam (make sure pop up blockers are not enabled)"

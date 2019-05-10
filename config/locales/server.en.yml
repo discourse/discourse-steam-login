@@ -1,0 +1,7 @@
+en:
+  site_settings:
+    enable_steam_logins: "Enable Steam authentication, requires steam_web_api_key. See <a href='https://meta.discourse.org/t/18153' target='_blank'>Steam Login / Authentication Plugin</a>"
+    steam_web_api_key: ""
+
+    errors:
+      steam_web_api_key_is_empty: "You must set 'steam web api key' before enabling this setting."

@@ -1,8 +1,3 @@
-# name: omniauth-steam
-# about: omniauth-steam
-# version: 1.0.3
-# author: Rodrigo Navarro
-
 require 'omniauth-openid'
 require 'multi_json'
 
@@ -13,11 +8,12 @@ module OmniAuth
 
       option :api_key, nil
       option :name, "steam"
-      option :identifier, "https://steamcommunity.com/openid"
+      option :identifier, "http://steamcommunity.com/openid"
 
       uid { steam_id }
 
       info do
+        begin
         {
           "nickname" => player["personaname"],
           "name"     => player["realname"],
@@ -28,10 +24,19 @@ module OmniAuth
             "FriendList" => friend_list_url
           }
         }
+        rescue MultiJson::ParseError => exception
+          fail!(:steamError, exception)
+          {}
+        end
       end
 
       extra do
-        { "raw_info" => player }
+        begin
+          { "raw_info" => player }
+        rescue MultiJson::ParseError => exception
+          fail!(:steamError, exception)
+          {}
+        end
       end
 
       private
@@ -45,7 +50,14 @@ module OmniAuth
       end
 
       def steam_id
-        openid_response.display_identifier.split("/").last
+        @steam_id ||= begin
+                        claimed_id = openid_response.display_identifier.split('/').last
+                        expected_uri = %r{\Ahttps?://steamcommunity\.com/openid/id/#{claimed_id}\Z}
+                        unless expected_uri.match(openid_response.endpoint.claimed_id)
+                          raise 'Steam Claimed ID mismatch!'
+                        end
+                        claimed_id
+                      end
       end
 
       def player_profile_uri

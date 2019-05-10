@@ -1,0 +1,6 @@
+plugins:
+  enable_steam_logins:
+    default: false
+  steam_web_api_key:
+    default: ""
+    secret: true
