@@ -1,6 +1,6 @@
 # name: Steam authentication with Discourse
 # about: Authenticate with Discourse with Steam
-# version: 2.0.0
+# version: 2.0.1
 # author: J. de Faye, tgxworld
 # template author: S. Saffron
 
