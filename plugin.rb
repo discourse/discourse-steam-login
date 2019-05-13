@@ -11,12 +11,9 @@ end
 
 register_asset 'stylesheets/steam-login.scss'
 
-load File.expand_path("../lib/auth/steam_authenticator.rb", __FILE__)
+[
+  "../lib/auth/steam_authenticator.rb",
+  "../lib/validators/enable_steam_logins_validator.rb"
+].each { |path| load File.expand_path(path, __FILE__) }
 
 auth_provider authenticator: Auth::SteamAuthenticator.new, icon: 'steam'
-
-after_initialize do
-  [
-    "../lib/validators/enable_steam_logins_validator.rb"
-  ].each { |path| load File.expand_path(path, __FILE__) }
-end
