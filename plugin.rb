@@ -2,7 +2,6 @@
 # about: Authenticate with Discourse with Steam
 # version: 2.0.1
 # author: J. de Faye, tgxworld
-# template author: S. Saffron
 
 gem 'omniauth-steam', '1.0.6'
 
