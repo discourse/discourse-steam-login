@@ -8,6 +8,9 @@ class Auth::SteamAuthenticator < ::Auth::ManagedAuthenticator
   end
 
   def register_middleware(omniauth)
-    omniauth.provider :steam, SiteSetting.steam_web_api_key
+    omniauth.provider :steam, setup: lambda { |env|
+      strategy = env["omniauth.strategy"]
+      strategy.options[:api_key] = SiteSetting.steam_web_api_key
+    }
   end
 end
