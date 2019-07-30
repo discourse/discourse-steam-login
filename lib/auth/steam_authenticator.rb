@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Auth::SteamAuthenticator < ::Auth::ManagedAuthenticator
   def name
     'steam'

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # name: Steam authentication with Discourse
 # about: Authenticate with Discourse with Steam
 # version: 2.0.1
