@@ -13,7 +13,7 @@ class EnableSteamLoginsValidator
 
   def error_message
     if SiteSetting.steam_web_api_key.blank?
-      return I18n.t('site_settings.errors.steam_web_api_key_is_empty')
+      I18n.t('site_settings.errors.steam_web_api_key_is_empty')
     end
   end
 end
