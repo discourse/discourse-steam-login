@@ -7,9 +7,7 @@
 
 gem 'omniauth-steam', '1.0.6'
 
-if respond_to?(:register_svg_icon)
-  register_svg_icon "fab fa-steam"
-end
+register_svg_icon "fab-steam" if respond_to?(:register_svg_icon)
 
 register_asset 'stylesheets/steam-login.scss'
 
@@ -18,4 +16,4 @@ register_asset 'stylesheets/steam-login.scss'
   "../lib/validators/enable_steam_logins_validator.rb"
 ].each { |path| load File.expand_path(path, __FILE__) }
 
-auth_provider authenticator: Auth::SteamAuthenticator.new, icon: 'steam'
+auth_provider authenticator: Auth::SteamAuthenticator.new, icon: 'fab-steam'
