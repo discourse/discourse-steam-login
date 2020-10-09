@@ -1,7 +1,10 @@
 {
+  "name": "discourse-steam-login",
+  "version": "1.0.0",
+  "repository": "git@github.com:discourse/discourse-steam-login.git",
   "author": "Discourse",
   "license": "MIT",
   "devDependencies": {
-    "eslint-config-discourse": "^1.1.5"
+    "eslint-config-discourse": "^1.1.3"
   }
 }
