@@ -5,3 +5,5 @@ plugins:
   steam_web_api_key:
     default: ""
     secret: true
+  steam_allow_revoke:
+    default: true
