@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 he:
+  site_settings:
+    enable_steam_logins: "הפעלת אימות דרך Steam, דורש את steam_web_api_key. פרטים נוספים תחת <a href='https://meta.discourse.org/t/18153' target='_blank'>כניסה ל־Steam / תוסף אימות</a>"
+    steam_web_api_key: "מפתח API מקוון של Steam"
+    errors:
+      steam_web_api_key_is_empty: "עליך להגדיר את ‚steam web api key’ בטרם הפעלת ההגדרה הזאת."
