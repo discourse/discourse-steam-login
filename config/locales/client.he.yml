@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 he:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "עם Steam"
+        message: "אימות דרך Steam (יש לוודא שחוסמי חלונות קופצים מושבתים)"
