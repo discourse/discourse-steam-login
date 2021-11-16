@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 fa_IR:
+  site_settings:
+    enable_steam_logins: "احراز هویت استیم را فعال کنید، به steam_web_api_key نیاز دارید. <a href='https://meta.discourse.org/t/18153' target='_blank'>افزونه احراز هویت / ورود استیم</a> مشاهده کنید"
+    steam_web_api_key: "کلید API وب استیم"
+    errors:
+      steam_web_api_key_is_empty: "قبل از فعال کردم این تنظیم، باید «کلید API وب» را تنظیم کنید."
