@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 ru:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "с помощью Steam"
+        message: "Аутентификация в Steam (убедитесь, что блокировщики всплывающих окон не включены)"
