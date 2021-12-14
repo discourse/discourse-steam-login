@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 zh_CN:
+  site_settings:
+    enable_steam_logins: "启用 Steam 身份验证，需要 steam_web_api_key。参见 <a href='https://meta.discourse.org/t/18153' target='_blank'>Steam 登录/身份验证插件</a>"
+    steam_web_api_key: "Steam 网页 API 密钥"
+    errors:
+      steam_web_api_key_is_empty: "在启用此设置之前，您必须先设置 'steam web api key'。"
