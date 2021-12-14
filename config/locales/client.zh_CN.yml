@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 zh_CN:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "通过Steam"
+        message: "使用 Steam 进行身份验证(请确保未启用弹出窗口阻止程序)"
