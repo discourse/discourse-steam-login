@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 ar:
+  site_settings:
+    enable_steam_logins: "تفعيل مصادقة Steam، تتطلَّب steam_web_api_key. انظر <a href='https://meta.discourse.org/t/18153' target='_blank'>تسجيل الدخول باستخدام Steam/المكوِّن الإضافي للمصادقة</a>"
+    steam_web_api_key: "مفتاح واجهة برمجة تطبيقات الويب لـ Steam"
+    errors:
+      steam_web_api_key_is_empty: "يجب عليك ضبط 'steam web api key' قبل تفعيل هذا الإعداد."

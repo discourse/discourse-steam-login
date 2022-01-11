@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 es:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "con Steam"
+        message: "Autenticación con Steam (asegúrate de no tener activados bloqueadores de ventanas emergentes)"
