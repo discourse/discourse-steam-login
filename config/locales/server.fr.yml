@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 fr:
+  site_settings:
+    enable_steam_logins: "Activer l'authentification Steam, nécessite steam_web_api_key. Voir l'<a href='https://meta.discourse.org/t/18153' target='_blank'>extension de connexion/authentification Steam</a>"
+    steam_web_api_key: "Clé d'API Web Steam"
+    errors:
+      steam_web_api_key_is_empty: "Vous devez définir la « clé de l'API Web Steam » avant d'activer ce paramètre."

@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 ja:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "Steam"
+        message: "Steam で認証中（ポップアップブロッカーが有効でないことを確認してください）"

@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 it:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "con Steam"
+        message: "Autenticazione con Steam (assicurati che gli strumenti di blocco popup non siano abilitati)"
