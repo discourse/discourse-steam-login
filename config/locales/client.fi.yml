@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 fi:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "Steamilla"
+        message: "Todennus Steamilla (varmista, että ponnahdusikkunoiden esto ei ole käytössä)"

@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 fi:
+  site_settings:
+    enable_steam_logins: "Ota Steam-todennus käyttöön, steam_web_api_key vaaditaan. Katso <a href='https://meta.discourse.org/t/18153' target='_blank'>Steam-kirjautuminen/todennuslisäosa</a>"
+    steam_web_api_key: "Steamin verkko-API-avain"
+    errors:
+      steam_web_api_key_is_empty: "Sinun täytyy asettaa \"steam web api key\" ennen tämän asetuksen käyttöönottoa."
