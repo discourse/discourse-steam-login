@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 pl_PL:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "z Steam"
+        message: "Uwierzytelnianie za pomocą Steam (upewnij się, że blokowanie wyskakujących okienek nie są włączone)"
