@@ -9,5 +9,5 @@ pl_PL:
     login:
       steam:
         name: "Steam"
-        title: "z Steam"
+        title: "przez Steam"
         message: "Uwierzytelnianie za pomocą Steam (upewnij się, że blokowanie wyskakujących okienek nie są włączone)"
