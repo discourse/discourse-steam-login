@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# name: Steam authentication with Discourse
+# name: discourse-steam-login
 # about: Authenticate with Discourse with Steam
 # version: 2.0.1
 # author: J. de Faye, tgxworld
