@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 el:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "με το Steam"
+        message: "Έλεγχος ταυτότητας με το Steam (βεβαιωθείτε ότι τα προγράμματα αποκλεισμού αναδυόμενων παραθύρων δεν είναι προσωρινά ενεργοποιημένα)"

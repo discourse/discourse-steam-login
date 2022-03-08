@@ -5,3 +5,8 @@
 # https://translate.discourse.org/
 
 el:
+  site_settings:
+    enable_steam_logins: "Ενεργοποίηση έλεγχο ταυτότητας Steam, απαιτείται steam_web_api_key, Δείτε <a href='https://meta.discourse.org/t/18153' target='_blank'> Σύνδεση στο Steam </a>"
+    steam_web_api_key: "Κλειδί Steam web API"
+    errors:
+      steam_web_api_key_is_empty: "Πρέπει να ρυθμίσετε ένα 'steam web api key' πριν κάνετε ενεργοποίηση αυτής της ρύθμισης."
