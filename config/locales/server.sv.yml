@@ -8,5 +8,6 @@ sv:
   site_settings:
     enable_steam_logins: "Aktivera Steam-autentisering, kräver steam_web_api_key. Se <a href='https://meta.discourse.org/t/18153' target='_blank'>Inloggnings-/autentiseringstillägg för Steam</a>"
     steam_web_api_key: "Steam web API-nyckel"
+    steam_allow_revoke: "Tillåt användare att ta bort sin koppling till Steam-kontot"
     errors:
       steam_web_api_key_is_empty: "Du måste ange 'steam web api-nyckel 'innan du aktiverar den här inställningen."
