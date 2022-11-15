@@ -8,5 +8,6 @@ ja:
   site_settings:
     enable_steam_logins: "Steam 認証を有効にする。steam_web_api_key が必要です。<a href='https://meta.discourse.org/t/18153' target='_blank'>Steam Login / Authentication Plugin</a>（Steam ログイン/認証プラグイン）をご覧ください。"
     steam_web_api_key: "Steam Web API キー"
+    steam_allow_revoke: "ユーザーによる Steam アカウントのリンク解除を許可する"
     errors:
       steam_web_api_key_is_empty: "この設定を有効にする前に 'steam web api key' を設定する必要があります。"
