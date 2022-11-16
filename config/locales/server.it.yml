@@ -8,5 +8,6 @@ it:
   site_settings:
     enable_steam_logins: "Abilita l'autenticazione con Steam, richiede l'impostazione steam_web_api_key. Consulta la sezione <a href='https://meta.discourse.org/t/18153' target='_blank'>Plugin di accesso/autenticazione Steam</a>"
     steam_web_api_key: "Chiave web API di Steam"
+    steam_allow_revoke: "Consenti agli utenti di scollegare il proprio account Steam"
     errors:
       steam_web_api_key_is_empty: "È necessario definire l'opzione 'steam web api key' prima di abilitare questa impostazione."
