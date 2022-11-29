@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 nl:
+  site_settings:
+    enable_steam_logins: "Schakel Steam-verificatie in, vereist steam_web_api_key. Zie <a href='https://meta.discourse.org/t/18153' target='_blank'>Steam-aanmelding / Verificatie-plug-in</a>"
+    steam_web_api_key: "Web-API-sleutel Steam"
+    steam_allow_revoke: "Gebruikers toestaam hun Steam-account te ontkoppelen"
+    errors:
+      steam_web_api_key_is_empty: "Je moet 'steam web api key' instellen voordat je deze instelling inschakelt."

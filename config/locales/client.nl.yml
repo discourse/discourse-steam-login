@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 nl:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "met Steam"
+        message: "Verifiëren met Steam (zorg dat pop-upblokkeringen niet zijn ingeschakeld)"
