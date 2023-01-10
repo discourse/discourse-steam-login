@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 tr_TR:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "Steam'le"
+        message: "Steam ile kimlik doğrulama (açılır pencere engelleyicilerin etkin olmadığından emin olun)"

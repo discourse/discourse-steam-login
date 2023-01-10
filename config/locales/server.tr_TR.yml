@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 tr_TR:
+  site_settings:
+    enable_steam_logins: "Steam kimlik doğrulamasını etkinleştirin, steam_web_api_key gerektirir. Bkz. <a href='https://meta.discourse.org/t/18153' target='_blank'>Steam Giriş / Kimlik Doğrulama Eklentisi</a>"
+    steam_web_api_key: "Steam web API anahtarı"
+    steam_allow_revoke: "Kullanıcıların Steam hesaplarının bağlantısını kaldırmasına izin verin"
+    errors:
+      steam_web_api_key_is_empty: "Bu ayarı etkinleştirmeden önce \"steam web api key\" ayarlamalısınız."
