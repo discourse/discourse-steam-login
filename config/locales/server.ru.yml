@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 ru:
+  site_settings:
+    enable_steam_logins: "Включить аутентификацию Steam, требует «steam_web_api_key». См. <a href='https://meta.discourse.org/t/18153' target='_blank'>Вход через Steam Login / Плагин аутентификации</a>."
+    steam_web_api_key: "Ключ веб-API для Steam"
+    steam_allow_revoke: "Разрешить пользователям отвязывать аккаунт Steam"
+    errors:
+      steam_web_api_key_is_empty: "Перед включением этого параметра необходимо задать «steam web api key»."
