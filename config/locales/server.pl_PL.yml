@@ -8,5 +8,6 @@ pl_PL:
   site_settings:
     enable_steam_logins: "Włącz uwierzytelnianie Steam, wymaga steam_web_api_key. Zobacz <a href='https://meta.discourse.org/t/18153' target='_blank'>Logowanie Steam / Wtyczka uwierzytelniania</a>"
     steam_web_api_key: "Klucz API Steam"
+    steam_allow_revoke: "Zezwól użytkownikom na odłączenie konta Steam"
     errors:
       steam_web_api_key_is_empty: "Musisz ustawić 'steam web api key' przed włączeniem tego ustawienia."
