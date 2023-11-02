@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # name: discourse-steam-login
-# about: Allows users to login to your forum using Steam Authentication. 
+# about: Allows users to login to your forum using Steam Authentication.
 # meta_topic_id: 18153
 # version: 2.0.1
 # author: J. de Faye, tgxworld
