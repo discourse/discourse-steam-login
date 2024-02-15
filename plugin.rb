@@ -17,8 +17,6 @@ gem "omniauth-steam", "1.0.6"
 
 register_svg_icon "fab-steam" if respond_to?(:register_svg_icon)
 
-register_asset "stylesheets/steam-login.scss"
-
 %w[
   ../lib/auth/steam_authenticator.rb
   ../lib/validators/enable_steam_logins_validator.rb
