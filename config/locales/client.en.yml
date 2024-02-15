@@ -3,5 +3,5 @@ en:
     login:
       steam:
         name: "Steam"
-        title: "with Steam"
+        title: "Log in with Steam"
         message: "Authenticating with Steam (make sure pop up blockers are not enabled)"
