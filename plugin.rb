@@ -9,8 +9,8 @@
 # omniauth-openid is not included in core since v2.4.0.beta10
 unless defined?(OmniAuth::Strategies::OpenID)
   gem "ruby-openid", "2.9.2", require: false
-  gem "rack-openid", "1.3.1", require: false
-  gem "omniauth-openid", "1.0.1"
+  gem "rack-openid", "1.4.2", require: false
+  gem "omniauth-openid", "2.0.1"
 end
 
 gem "omniauth-steam", "1.0.6"
