@@ -9,5 +9,4 @@ sv:
     login:
       steam:
         name: "Steam"
-        title: "med Steam"
         message: "Autentisera med Steam (se till att popup-blockerare inte har aktiverats)"

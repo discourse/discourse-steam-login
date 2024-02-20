@@ -9,5 +9,5 @@ fi:
     login:
       steam:
         name: "Steam"
-        title: "Steamilla"
+        title: "Kirjaudu Steamillä"
         message: "Todennus Steamilla (varmista, että ponnahdusikkunoiden esto ei ole käytössä)"

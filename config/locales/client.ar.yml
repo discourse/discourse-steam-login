@@ -9,5 +9,4 @@ ar:
     login:
       steam:
         name: "Steam"
-        title: "باستخدام Steam"
         message: "المصادقة باستخدام Steam (تأكَّد أن أدوات حظر النوافذ المنبثقة غير مفعَّلة)"
