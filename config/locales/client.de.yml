@@ -9,4 +9,5 @@ de:
     login:
       steam:
         name: "Steam"
+        title: "Mit Steam anmelden"
         message: "Authentifizierung mit Steam (stelle sicher, dass Pop-up-Blocker nicht aktiviert sind)"
