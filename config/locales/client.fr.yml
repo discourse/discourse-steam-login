@@ -9,4 +9,5 @@ fr:
     login:
       steam:
         name: "Steam"
+        title: "Se connecter avec Steam"
         message: "Authentification avec Steam (assurez-vous qu'aucun bloqueur de fenêtres contextuelles n'est activé)"

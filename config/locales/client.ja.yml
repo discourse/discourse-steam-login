@@ -9,4 +9,5 @@ ja:
     login:
       steam:
         name: "Steam"
+        title: "Steam でログイン"
         message: "Steam で認証中（ポップアップブロッカーが有効でないことを確認してください）"

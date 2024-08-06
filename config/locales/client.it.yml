@@ -9,4 +9,5 @@ it:
     login:
       steam:
         name: "Steam"
+        title: "Accedi con Steam"
         message: "Autenticazione con Steam (assicurati che gli strumenti di blocco popup non siano abilitati)"

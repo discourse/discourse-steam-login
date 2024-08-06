@@ -9,4 +9,5 @@ es:
     login:
       steam:
         name: "Steam"
+        title: "Iniciar sesión con Steam"
         message: "Autenticación con Steam (asegúrate de no tener activados bloqueadores de ventanas emergentes)"
