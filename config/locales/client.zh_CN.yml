@@ -9,4 +9,5 @@ zh_CN:
     login:
       steam:
         name: "Steam"
+        title: "使用 Steam 登录"
         message: "使用 Steam 进行身份验证（确保未启用弹出窗口阻止程序）"

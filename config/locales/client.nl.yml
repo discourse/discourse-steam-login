@@ -9,4 +9,5 @@ nl:
     login:
       steam:
         name: "Steam"
+        title: "Aanmelden met Steam"
         message: "Verifiëren met Steam (zorg dat pop-upblokkeringen niet zijn ingeschakeld)"

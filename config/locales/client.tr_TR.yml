@@ -9,4 +9,5 @@ tr_TR:
     login:
       steam:
         name: "Steam"
+        title: "Steam ile giriş yapın"
         message: "Steam ile kimlik doğrulama (açılır pencere engelleyicilerin etkin olmadığından emin olun)"
