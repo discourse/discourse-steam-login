@@ -9,4 +9,5 @@ pt_BR:
     login:
       steam:
         name: "Steam"
+        title: "Entrar com o Steam"
         message: "Autenticação com o Steam (desative bloqueadores de pop-up, se necessário)"
