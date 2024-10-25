@@ -19,4 +19,8 @@ class MigrateSteamAuthData < ActiveRecord::Migration[5.2]
     WHERE plugin_name = 'steam'
     SQL
   end
+
+  def down
+    raise ActiveRecord::IrreversibleMigration
+  end
 end
