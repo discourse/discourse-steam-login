@@ -1,10 +1,4 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
-pt_BR:
+pt:
   site_settings:
     enable_steam_logins: "Ative a autenticação via Steam, requer steam_web_api_key. Acesse <a href='https://meta.discourse.org/t/18153' target='_blank'>Login via Steam/Plugin de autenticação</a>"
     steam_web_api_key: "Chave de API do Steam"

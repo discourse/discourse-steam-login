@@ -1,10 +1,4 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
-zh_CN:
+zh-CN:
   site_settings:
     enable_steam_logins: "启用 Steam 身份验证，需要 steam_web_api_key。请参阅 <a href='https://meta.discourse.org/t/18153' target='_blank'>Steam 登录/身份验证插件</a>"
     steam_web_api_key: "Steam web API 密钥"

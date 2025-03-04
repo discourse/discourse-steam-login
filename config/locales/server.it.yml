@@ -1,9 +1,3 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 it:
   site_settings:
     enable_steam_logins: "Abilita l'autenticazione con Steam, richiede l'impostazione steam_web_api_key. Consulta la sezione <a href='https://meta.discourse.org/t/18153' target='_blank'>Plugin di accesso/autenticazione Steam</a>"

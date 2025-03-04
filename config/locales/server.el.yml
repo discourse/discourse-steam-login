@@ -1,9 +1,3 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
 el:
   site_settings:
     enable_steam_logins: "Ενεργοποίηση έλεγχο ταυτότητας Steam, απαιτείται steam_web_api_key, Δείτε <a href='https://meta.discourse.org/t/18153' target='_blank'> Σύνδεση στο Steam </a>"

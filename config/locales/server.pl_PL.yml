@@ -1,10 +1,4 @@
-# WARNING: Never edit this file.
-# It will be overwritten when translations are pulled from Crowdin.
-#
-# To work with us on translations, join this project:
-# https://translate.discourse.org/
-
-pl_PL:
+pl:
   site_settings:
     enable_steam_logins: "Włącz uwierzytelnianie Steam, wymaga steam_web_api_key. Zobacz <a href='https://meta.discourse.org/t/18153' target='_blank'>Logowanie Steam / Wtyczka uwierzytelniania</a>"
     steam_web_api_key: "Klucz API Steam"
