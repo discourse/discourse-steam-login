@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 pt:
+  site_settings:
+    enable_steam_logins: "A ativação da autenticação do Steam, requer steam_web_api_key. Comnsulte <a href='https://meta.discourse.org/t/18153' target='_blank'>Iniciar Sessão Steam / Plug-in de Autenticação</a>"
+    steam_web_api_key: "Chave da API da Web do Steam"
+    steam_allow_revoke: "Permitir que os utilizadores desassociem a própria conta do Steam"
+    errors:
+      steam_web_api_key_is_empty: "Deve definir a 'chave da api da Web do steam' antes de ativar esta definição."

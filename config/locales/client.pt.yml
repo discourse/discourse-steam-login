@@ -5,3 +5,9 @@
 # https://translate.discourse.org/
 
 pt:
+  js:
+    login:
+      steam:
+        name: "Steam"
+        title: "Iniciar sessão com o Steam"
+        message: "A autenticar com o Steam (certifique-se que os bloqueadores de janelas não estão ativados)"
