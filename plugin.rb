@@ -18,6 +18,5 @@ gem "omniauth-steam", "1.0.6"
 register_svg_icon "fab-steam" if respond_to?(:register_svg_icon)
 
 require_relative "lib/auth/steam_authenticator"
-require_relative "lib/validators/enable_steam_logins_validator"
 
 auth_provider authenticator: Auth::SteamAuthenticator.new, icon: "fab-steam"

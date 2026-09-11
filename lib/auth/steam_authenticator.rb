@@ -5,8 +5,12 @@ class Auth::SteamAuthenticator < ::Auth::ManagedAuthenticator
     "steam"
   end
 
-  def enabled?
-    SiteSetting.enable_steam_logins
+  def enable_setting
+    :enable_steam_logins
+  end
+
+  def required_settings
+    %i[steam_web_api_key]
   end
 
   def can_revoke?
