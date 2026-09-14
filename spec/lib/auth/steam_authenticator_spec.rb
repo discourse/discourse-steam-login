@@ -1,6 +1,25 @@
 # frozen_string_literal: true
 
 describe Auth::SteamAuthenticator do
+  describe "#enabled?" do
+    subject(:authenticator) { described_class.new }
+
+    it "requires configured credentials and the login toggle" do
+      SiteSetting.steam_web_api_key = "api_key"
+      expect(authenticator.enabled?).to eq(false)
+
+      SiteSetting.enable_steam_logins = true
+      expect(authenticator.enabled?).to eq(true)
+
+      SiteSetting.steam_web_api_key = ""
+      expect(authenticator.enabled?).to eq(false)
+    end
+
+    it "rejects enabling login without an API key" do
+      expect { SiteSetting.enable_steam_logins = true }.to raise_error(Discourse::InvalidParameters)
+    end
+  end
+
   describe "#can_revoke?" do
     it "should be false be default" do
       authenticator = Auth::SteamAuthenticator.new
